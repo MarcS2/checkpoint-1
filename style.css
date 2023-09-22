@@ -68,6 +68,11 @@ header {
   max-height: 600px;
 }
 
+.positionAbs {
+  position: absolute;
+  right: 90px;
+}
+
 /* utility */
 .mainColor {
   background-color: rgb(16, 164, 110);
