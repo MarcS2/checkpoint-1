@@ -10,7 +10,7 @@ header {
   background-image: url(https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
   background-position: center;
   background-size: cover;
-  min-height: 50vh;
+  min-height: 70vh;
 
 }
 
@@ -44,6 +44,16 @@ header {
   min-height: 50vh;
 }
 
+
+.heroTxtSize {
+  min-height: 29vh;
+}
+
+.heroTxt {
+  padding: 6vh 9vh;
+}
+
+
 .mainText {
   padding: 14vh 14vh;
 }
@@ -69,8 +79,13 @@ header {
 }
 
 .positionAbs {
+  box-shadow: 1px 1px 1px;
+  max-width: 85vh;
+  min-height: 26vh;
+  text-align: start;
   position: absolute;
-  right: 90px;
+  right: 11vh;
+  padding: 5vh 5vh;
 }
 
 /* utility */
@@ -96,9 +111,26 @@ header {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1201px) {
 
   .firsttxt {
     display: none;
   }
+
+  .positionAbs {
+    order: -1;
+    position: static;
+
+
+  }
+
+  .positionRel {
+    position: static;
+  }
+
+  .heroTxtSize {
+    justify-content: center;
+  }
+
+
 }
